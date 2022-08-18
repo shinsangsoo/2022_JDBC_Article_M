@@ -75,6 +75,8 @@ public class App {
 			memberController.doJoin(cmd);
 		} else if (cmd.equals("member login")) {
 			memberController.login(cmd);
+		} else if (cmd.equals("member logout")) {
+			memberController.logout(cmd);
 		} else if (cmd.equals("member profile")) {
 			memberController.showProfile(cmd);
 		} else if (cmd.equals("article write")) {
@@ -85,7 +87,7 @@ public class App {
 			articleController.showDetail(cmd);
 		} else if (cmd.startsWith("article modify ")) {
 			articleController.doModify(cmd);
-		} else if (cmd.equals("article list")) {
+		} else if (cmd.equals("article list")) {   
 			articleController.showList(cmd);
 		} else {
 			System.out.println("존재하지 않는 명령어 입니다");
